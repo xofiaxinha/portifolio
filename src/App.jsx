@@ -1,6 +1,7 @@
 import {Header, HeaderItem} from "./components/header/header"
 import Home from "./components/home/home"
 import { Projetos } from "./components/projetos/projetos"
+import Skills from "./components/skills/skills"
 import Sobre from "./components/sobre/sobre"
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       <Home/>
       <Projetos listaProjetos={items}/>
       <Sobre/>
+      <Skills/>
     </>
   )
 }
