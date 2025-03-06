@@ -5,7 +5,7 @@ import "./assets/projetos.css"
 function Projetos({listaProjetos}){
     const [hoveredIndex, setHoveredIndex] = useState(-1)
     return(
-        <Container className="flex items-center">
+        <Container className="flex items-center h-fit">
             <h1 className="text-amber-950 text-5xl font-bold uppercase lg:text-6xl my-2">Projetos</h1>
             <div className="projetos-container w-full p-10 flex flex-wrap justify-center">
                 {listaProjetos.map((projeto, index) => {

@@ -1,6 +1,7 @@
 import {Header, HeaderItem} from "./components/header/header"
 import Home from "./components/home/home"
 import { Projetos } from "./components/projetos/projetos"
+import Sobre from "./components/sobre/sobre"
 
 function App() {
   const items = [
@@ -34,6 +35,7 @@ function App() {
       <hr className="border-1 border-amber-300"/>
       <Home/>
       <Projetos listaProjetos={items}/>
+      <Sobre/>
     </>
   )
 }
