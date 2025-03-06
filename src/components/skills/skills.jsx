@@ -11,7 +11,7 @@ export default function Skills(){
             "softSkills":"Comunicação, Trabalho em equipe, Proatividade"
         }
     return(
-        <Container className="flex">
+        <Container className="flex justify-center items-center">
             <h1 className="text-amber-950 text-5xl font-bold uppercase lg:text-6xl my-2">Skills</h1>
             <div className="skill-container w-full p-10 justify-center">
                 {Object.keys(skills).map((skill, index) => {
