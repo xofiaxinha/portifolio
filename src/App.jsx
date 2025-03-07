@@ -1,3 +1,4 @@
+import Footer from "./components/footer/footer"
 import {Header, HeaderItem} from "./components/header/header"
 import Home from "./components/home/home"
 import { Projetos } from "./components/projetos/projetos"
@@ -38,6 +39,7 @@ function App() {
       <Projetos listaProjetos={items}/>
       <Sobre/>
       <Skills/>
+      <Footer/>
     </>
   )
 }
