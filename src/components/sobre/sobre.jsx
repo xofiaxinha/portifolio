@@ -1,6 +1,9 @@
 import IconButton from "../buttons/iconButton";
 import Container from "../container/container";
 
+const linkedin = "src/components/sobre/assets/icons8-linkedin-1.svg"
+const github = "src/components/sobre/assets/icons8-github-1.svg"
+
 export default function Sobre(){
     return(
         <Container className="flex flex-col md:flex-row lg:p-20">
@@ -12,8 +15,8 @@ export default function Sobre(){
                 <h3 className="text-amber-700 text-xl tracking-[.40em] lg:text-2xl my-2">front-end, UI/UX</h3>
                 <p className="text-amber-900 text-lg my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam nec turpis</p>
                 <div className="button-container flex w-full gap-4">
-                    <IconButton icon="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" link="https://www.linkedin.com/in/xofiaxinha/"/>
-                    <IconButton icon="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" link="https://github.com/xofiaxinha/"/>
+                    <IconButton icon={linkedin} link="https://www.linkedin.com/in/xofiaxinha/"/>
+                    <IconButton icon={github} link="https://github.com/xofiaxinha/"/>
                 </div>
             </div>
         </Container>
