@@ -4,28 +4,13 @@ import Home from "./components/home/home"
 import { Projetos } from "./components/projetos/projetos"
 import Skills from "./components/skills/skills"
 import Sobre from "./components/sobre/sobre"
+import listadeprojetos from "./components/projetos/assets/listadeprojetos.json"
+import listadeskills from "./components/skills/assets/listadeskills.json"
 
 function App() {
-  const items = [
-    {
-        nome: "home"
-    },
-    {
-        nome: "projetos"
-    },
-    {
-        nome: "sobre"
-    },
-    {
-      nome: "sobre"
-    },
-    {
-      nome: "sobre"
-    },
-    {
-        nome: "contato"
-    }
-]
+  const projetos = listadeprojetos
+  const skills = listadeskills
+
   return(
     <>
       <Header>
@@ -36,9 +21,9 @@ function App() {
       </Header>
       <hr className="border-1 border-amber-300"/>
       <Home/>
-      <Projetos listaProjetos={items}/>
+      <Projetos listaProjetos={projetos}/>
       <Sobre/>
-      <Skills/>
+      <Skills listaSkills={skills}/>
       <Footer/>
     </>
   )
