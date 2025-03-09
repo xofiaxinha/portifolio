@@ -7,12 +7,12 @@ export default function Projetos({listaProjetos}){
     function projectModal(projeto){
         return(
             <div className={"before bg-zinc-950/20 fixed z-1 top-0 left-0 w-full h-full flex items-center justify-center"}>
-                <div className="h-150 w-200 bg-zinc-50 flex flex-col">
+                <div className="h-150 w-200 bg-zinc-50 flex flex-col rounded-xl p-10">
                     <button onClick={() => setShowModal(false)} className="m-10 self-end text-xl bg-amber-600 hover:bg-amber-950 text-white h-10 w-10 rounded-lg flex justify-center items-center cursor-pointer">X</button>
                     <h1 className="text-amber-950 text-3xl font-bold m-4">{projeto.nome}</h1>
                     {<img src={projeto.imagem} alt="print do projeto" className="m-4 h-50"/>}
                     <p className="m-4">{projeto.descricao}</p>
-                    <TextButton text="Ver projeto" link={projeto.link}/>
+                    <TextButton text="Ver projeto" link={projeto.github}/>
                 </div>
             </div>
         )
