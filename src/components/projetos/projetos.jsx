@@ -10,7 +10,7 @@ export default function Projetos({listaProjetos}){
                 <div className="h-150 w-200 bg-zinc-50 flex flex-col">
                     <button onClick={() => setShowModal(false)} className="m-10 self-end text-xl bg-amber-600 hover:bg-amber-950 text-white h-10 w-10 rounded-lg flex justify-center items-center cursor-pointer">X</button>
                     <h1 className="text-amber-950 text-3xl font-bold m-4">{projeto.nome}</h1>
-                    <img src={projeto.imagem} alt="print do projeto" className="m-4 h-50"/>
+                    {<img src={projeto.imagem} alt="print do projeto" className="m-4 h-50"/>}
                     <p className="m-4">{projeto.descricao}</p>
                     <TextButton text="Ver projeto" link={projeto.link}/>
                 </div>
