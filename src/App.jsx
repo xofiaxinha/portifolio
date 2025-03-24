@@ -6,10 +6,12 @@ import Skills from "./components/skills/skills"
 import Sobre from "./components/sobre/sobre"
 import listadeprojetos from "./components/projetos/assets/listadeprojetos.json"
 import listadeskills from "./components/skills/assets/listadeskills.json"
+import useSmoothScroll from "./components/hooks/useSmoothScroll"
 
 function App() {
   const projetos = listadeprojetos
   const skills = listadeskills
+  useSmoothScroll();
 
   return(
     <>
@@ -17,7 +19,7 @@ function App() {
         <HeaderItem name="home" />
         <HeaderItem name="projetos" />
         <HeaderItem name="sobre" />
-        <HeaderItem name="contato" />  
+        <HeaderItem name="skills" />
       </Header>
       <hr className="border-1 border-amber-300"/>
       <Home/>

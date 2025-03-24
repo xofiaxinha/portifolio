@@ -23,7 +23,7 @@ export default function Projetos({listaProjetos}){
     return(
         <>
             {showModal ? projectModal(listaProjetos[clickedIndex]) : null}
-            <Container className="flex items-center">
+            <Container id="projetos" className="flex items-center">
                 <h1 className="text-amber-950 text-5xl font-bold uppercase lg:text-6xl my-2">Projetos</h1>
                 <div className="projetos-container w-full p-10 flex flex-wrap justify-center">
                     {listaProjetos.map((projeto, index) => {

@@ -6,7 +6,7 @@ const github = "src/components/sobre/assets/icons8-github-1.svg"
 
 export default function Sobre(){
     return(
-        <Container className="flex flex-col md:flex-row lg:p-20">
+        <Container id="sobre" className="flex flex-col md:flex-row lg:p-20">
             <div className="img-section flex w-full justify-center">
                 <div className="rounded-full w-70 lg:w-120 h-70 lg:h-120 bg-[url(src/assets/img_5.png)] bg-cover bg-amber-700 m-4 col-span-1"></div>
             </div>
