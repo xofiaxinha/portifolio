@@ -8,7 +8,7 @@ export default function Sobre(){
     return(
         <Container id="sobre" className="flex flex-col md:flex-row lg:p-20">
             <div className="img-section flex w-full justify-center">
-                <div className="rounded-full w-70 lg:w-120 h-70 lg:h-120 bg-[url(src/assets/img_5.png)] bg-cover bg-amber-700 m-4 col-span-1"></div>
+                <div className="rounded-full w-70 lg:w-120 h-70 lg:h-120 bg-[url(https://i.imgur.com/hChXIpw.png)] bg-cover bg-amber-700 m-4 col-span-1"></div>
             </div>
             <div className="sobre-section flex flex-col w-full justify-center">
                 <h1 className="text-amber-950 text-5xl font-bold uppercase lg:text-6xl my-2">Maria Sofia</h1>
